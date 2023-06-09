@@ -90,17 +90,20 @@ return (
    </div>
 
 
-
-
 {displayRoutine.map(( exercise, index)=> {
- 
+ let exercises = exercise.split(" ")
   return(
-<div key ={index} className='card'>
+<div key={index} className='card'>
+    {exercises.map((moves)=>{
+      return(
 
-  <li>
-    {exercise}
+  <li className='list'>{moves}</li>
+
+
+      )
+    })}
    
-  </li>
+
 </div>
   )
 })}

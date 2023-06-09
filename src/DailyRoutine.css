@@ -1,0 +1,49 @@
+.daily-container{
+  max-width: 400px;
+  padding: 10px;
+}
+
+
+
+.form-modal{
+width: 100%;
+  background-color: blueviolet;
+border-radius: 20px;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    
+/* 
+    color: white;
+    position: absolute;
+      left: 340px;
+      top: 548px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 10px;
+    
+      text-align: center; */
+}
+
+.dailyImg{
+display: flex;
+max-width: 450px;
+  
+}
+
+.card{
+margin-top: 20px;
+width: 100%;
+height: 300px;
+background-color: rgb(246, 134, 48);
+color:whitesmoke;
+border-radius: 20px;
+padding: 10px;
+
+
+
+}
+  
+  
+  

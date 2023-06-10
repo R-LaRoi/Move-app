@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  user-select: none;
+}
+
+
+.hero-container{
+display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 30px auto;
+  height: 100vh;
+
+
+}
+
+.home-btn {
+width: 200px;
+  padding: 15px;
+  color: #fdfdfd;
+ border: 2px solid #ffffff;
+ border-radius: 10px;
+ background-color: transparent;
+ margin: 5px;
+
+}
+
+.home-btn:hover {
+  background-color: #f2f2f2;
+  color: blueviolet;
+
+}
+
+.header{
+line-height: .7;
+font-size: 4rem;
+color: white;
+position: absolute;
+width: 300px;
+top: 300px;
+left: 120px;
+padding-bottom: 10px;
+
+}

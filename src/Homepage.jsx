@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "./homepage.css"
 
 
 import './App.css'
@@ -13,14 +14,13 @@ export default function Homepage() {
       <video autoPlay loop muted id="video">
         <source
           src="
-
-https://github.com/R-LaRoi/Flavor-App/assets/114012059/728b571a-fb5e-464e-911e-5e2e1955a692"
+https://github.com/R-LaRoi/Move-app/assets/114012059/a6428fa5-0f4d-41f0-8955-be3153861000"
           type="video/mp4"
         />
       </video>
-      <div className='header--vid'> <span>consistency is key.</span>
-     <Link to = "/meetrachel"> <button>meet rachel</button></Link>
-         <Link to = "/dailyroutine">  <button>what's the move</button></Link></div>
+      <div className='header'> <span>consistency is key.</span>
+     <Link to = "/meetrachel"> <button className='home-btn'>meet rachel</button></Link>
+         <Link to = "/dailyroutine">  <button className='home-btn'>what's the move</button></Link></div>
       
 </section>
   )

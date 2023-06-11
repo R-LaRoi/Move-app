@@ -10,14 +10,14 @@ return (
 <section className='meet-container'>
   <Navbar />
 
- <video autoPlay loop muted id="move-video">
+ {/* <video autoPlay loop muted id="move-video">
         <source
           src="
 https://user-images.githubusercontent.com/114012059/191604414-888f1fcf-0e85-48fc-9b6e-75a2f95f453d.mp4"
           type="video/mp4"
         />
 
-</video>
+</video> */}
 
 
 

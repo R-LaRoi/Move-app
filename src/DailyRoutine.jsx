@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import ExerciseForm from './ExerciseForm'
+
 import dailyImage from './assets/dailyImage.png'
 import Navbar from './Navbar'
 
-import "./dailyRoutine.css"
+import "./DailyRoutine.css"
 
 // ------------------- FIREBASE ----------------
 

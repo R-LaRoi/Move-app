@@ -2,11 +2,12 @@
   color: white;
   margin: 0;
   padding: 0;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-width: 400px;
+box-shadow: rgba(86, 86, 86, 0.272) 0px 4px 20px;
 height: 40px;
-
-top: 30px;
+background-color: rgba(255, 255, 255, 0.937) ;
+position: fixed;
+width: 100%;
+z-index: 10;
 }
 
 a, .icons{

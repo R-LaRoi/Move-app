@@ -2,19 +2,18 @@
   color: white;
   margin: 0;
   padding: 0;
-box-shadow: rgba(86, 86, 86, 0.272) 0px 4px 20px;
-height: 40px;
-background-color: rgba(255, 255, 255, 0.937) ;
+
+
 position: fixed;
-width: 100%;
+width: 485px;
 z-index: 10;
 }
 
 a, .icons{
-  margin: 0;
+  margin: 4px;
 padding: 0;
-font-size: 1rem;
-color: rgb(124, 70, 215);
+font-size: 1.5rem;
+color: #ff8c1e;
 text-decoration: none;
 display: flex;
 gap: 10px;

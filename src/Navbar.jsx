@@ -13,7 +13,7 @@ export default function Navbar() {
 <NavLink to="/"><i className="fa-solid fa-house"></i></NavLink>
         </li>
         <li>
-  <NavLink to="/meetrachel"><i className="fa-solid fa-registered"></i> <NavLink to="/dailyroutine"><i className="fa-solid fa-list-ul"></i></NavLink></NavLink>
+  <NavLink to="/meetrachel"><i className="fa-solid fa-user"></i> <NavLink to="/dailyroutine"><i className="fa-solid fa-list"></i></NavLink></NavLink>
 
         </li>
       </ul>

@@ -10,13 +10,11 @@ export default function Navbar() {
     <nav className="nav-container">
       <ul className="icons">
         <li>
-<NavLink to="/">H</NavLink>
+<NavLink to="/"><i className="fa-solid fa-house"></i></NavLink>
         </li>
         <li>
-  <NavLink to="/meetrachel">R</NavLink>
-        </li>
-        <li>
-  <NavLink to="/dailyroutine">Log</NavLink>
+  <NavLink to="/meetrachel"><i className="fa-solid fa-registered"></i> <NavLink to="/dailyroutine"><i className="fa-solid fa-list-ul"></i></NavLink></NavLink>
+
         </li>
       </ul>
    

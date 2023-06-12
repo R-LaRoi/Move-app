@@ -1,12 +1,3 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-
-  user-select: none;
-    max-width: 500px;
-}
-
 
 .hero-container{
 display: flex;
@@ -59,3 +50,52 @@ font-family: 'Permanent Marker', cursive;
 
 }
 
+.move-video{
+
+  display: none;
+}
+
+
+
+
+
+
+/*  MEDIA QUERIES ------------------------>*/ 
+
+
+
+@media (min-width:700px){
+
+
+  body{
+
+    max-width: 1200px;
+  }
+#mobile-vid{
+  display: none;
+}
+  #dsk-vid {
+    display: block;
+      width: 100%;
+      height: 100vh;
+      background-position: absolute;
+      object-fit: cover;
+      z-index: 10;
+    }
+
+
+    .move-video{
+
+      display: block;
+    }
+
+
+    .hero-container {
+      display: flex;
+      flex-direction: row;
+
+  
+  
+    }
+
+}

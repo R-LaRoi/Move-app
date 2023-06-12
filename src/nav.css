@@ -2,25 +2,56 @@
   color: white;
   margin: 0;
   padding: 0;
-
-
 position: fixed;
-width: 485px;
 z-index: 10;
+display: flex;
+
+
+
 }
 
 a, .icons{
   margin: 4px;
 padding: 0;
-font-size: 1.5rem;
+font-size: 1.4rem;
 color: #ff8c1e;
 text-decoration: none;
 display: flex;
-gap: 10px;
-justify-content: space-between;
 list-style: none;
+
 
 
 
 }
 
+i:hover{
+
+  color: rgb(218, 32, 184);
+}
+
+.fa-note-sticky{
+position: absolute;
+left: 850px;
+  color: rgb(226, 43, 189);
+}
+
+@media (max-width:500px){
+
+
+  .nav-container {
+      color: white;
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      z-index: 10;
+      display: flex;
+  
+
+
+  }
+  .fa-note-sticky {
+      position: absolute;
+      left: 80px;
+      color: rgb(255, 40, 219);
+    }
+}

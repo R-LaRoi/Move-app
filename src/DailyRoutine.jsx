@@ -46,7 +46,7 @@ return index % 2===1}
 ).reverse()
 
 setDisplayRoutine(postRoutines)
-deleteCard((routineID[0]))
+
  }
 
  } }) },[
@@ -71,8 +71,9 @@ function clickedBtn(){
 
 function deleteCard(number){
 
-// let dbRoutine = ref(database, `Daily Routine/${number}`)
-// remove(dbRoutine)
+let dbRoutine = ref(database, `Daily Routine/-NXkgeMKhTmudPrusxjC`)
+remove(dbRoutine)
+
 
 console.log(number)
 
@@ -112,17 +113,17 @@ return (
 {displayRoutine.map(( exercise, index)=> {
  let exercises = exercise.split(" -")
   return(
-<div key={index} className='card-co' >
+<div key={index} className='card-co'>
 
 <div className='col-1'>
   <div>mon</div>
   <i className="fa-solid fa-circle-minus" onClick={deleteCard}></i>
 
   </div>
-    {exercises.map((moves)=>{
+    {exercises.map((moves, index)=>{
       return(
 
-  <li className='col-list'>{moves}</li>
+  <li className='col-list' key={index}>{moves}</li>
 
 
       )

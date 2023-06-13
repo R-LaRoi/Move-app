@@ -26,27 +26,26 @@ let day = new Date()
 
 export default function DailyRoutine() {
 let [showForm, setShowForm] = useState(false);
+let [deletBtn, setDeleteBtn] = useState(false);
 let [userInput, setUserInput] = useState('');
 let [showWorkout, setShowWorkout] = useState([])
 let [displayRoutine, setDisplayRoutine] = useState([])
-
-
+let number = ""
 
 useEffect(()=> {
 onValue(routinesInDB, function(snapshot) {
  if (snapshot.exists()){
   {
 let routines = Object.entries(snapshot.val())
-
 let routineID = routines[0]
 let routinesArray = routines.flat()
+number = routineID
 let postRoutines = routinesArray.filter((item, index) => {
-// let number = (routineID[0])
 return index % 2===1}
 ).reverse()
 
 setDisplayRoutine(postRoutines)
-
+deleteCard(routineID)
  }
 
  } }) },[
@@ -69,16 +68,29 @@ function clickedBtn(){
   return(setShowForm(!showForm))
 }
 
-function deleteCard(number){
 
-let dbRoutine = ref(database, `Daily Routine/-NXkgeMKhTmudPrusxjC`)
-remove(dbRoutine)
+function deleteRoutine(){
+  console.log('deleting')
+  deleteCard()
+return(setDeleteBtn(!deletBtn))
+
+}
 
 
-console.log(number)
+
+async function deleteCard(routineCard){
+if(deleteRoutine) {
+let idNumber = routineCard[0]
+let dbRoutine = ref(database, `Daily Routine/${idNumber}`)
+await remove(dbRoutine)
+console.log('delete function')
+
+}
 
 
 }
+
+
 
 return (
 
@@ -117,9 +129,16 @@ return (
 
 <div className='col-1'>
   <div>mon</div>
-  <i className="fa-solid fa-circle-minus" onClick={deleteCard}></i>
+
+
+<div>
+
+<i className="fa-solid fa-circle-minus"  onClick={deleteRoutine}></i> 
+
+</div>
 
   </div>
+
     {exercises.map((moves, index)=>{
       return(
 
@@ -136,7 +155,7 @@ return (
 
 
  <div className='card-co' > 
-  <div className='date'>mon 24</div>
+  <div className='date'></div>
  <div className='list-' >
 <ul >
 

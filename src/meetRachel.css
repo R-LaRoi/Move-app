@@ -41,6 +41,22 @@ padding: 220px 30px 40px 30px;
 
 @media (min-width:700px) {
 
+
+
+  .meet-container{
+
+
+    width: 600px;
+      padding: 10px;
+
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 30%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
   .sec-two {
     display: flex;
     flex-direction: column;
@@ -57,7 +73,7 @@ text-align: center;
           border: 5px solid rgb(255, 255, 255);
           position: relative;
           top: 180px;
-          left: 415px;
+   left: 130px;
           z-index: 1;
         }
 }

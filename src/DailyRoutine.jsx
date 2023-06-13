@@ -31,7 +31,8 @@ let [userInput, setUserInput] = useState('');
 let [showWorkout, setShowWorkout] = useState([])
 let [displayRoutine, setDisplayRoutine] = useState([])
 let number = ""
-
+const weekly = new Date()
+const wkDay = weekly.getDay()
 useEffect(()=> {
 onValue(routinesInDB, function(snapshot) {
  if (snapshot.exists()){
@@ -68,27 +69,16 @@ function clickedBtn(){
   return(setShowForm(!showForm))
 }
 
-
-function deleteRoutine(){
-  console.log('deleting')
-  deleteCard()
-return(setDeleteBtn(!deletBtn))
-
-}
-
-
-
 async function deleteCard(routineCard){
-if(deleteRoutine) {
-let idNumber = routineCard[0]
-let dbRoutine = ref(database, `Daily Routine/${idNumber}`)
-await remove(dbRoutine)
-console.log('delete function')
 
+// let idNumber = routineCard[0]
+// let dbRoutine = ref(database, `Daily Routine/${idNumber}`)
+// await remove(dbRoutine)
+
+console.log(routineCard)
 }
 
 
-}
 
 
 
@@ -128,12 +118,13 @@ return (
 <div key={index} className='card-co'>
 
 <div className='col-1'>
-  <div>mon</div>
+  <div>{wkDay}</div>
 
 
 <div>
 
-<i className="fa-solid fa-circle-minus"  onClick={deleteRoutine}></i> 
+
+<i className="fa-solid fa-circle-minus"  onClick={()=>deleteCard()}></i> 
 
 </div>
 

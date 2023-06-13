@@ -5,6 +5,7 @@
 position: fixed;
 z-index: 10;
 display: flex;
+width: 500px;
 
 
 
@@ -31,7 +32,7 @@ i:hover{
 
 .fa-note-sticky{
 position: absolute;
-left: 850px;
+left: 550px;
   color: rgb(226, 43, 189);
 }
 
@@ -45,7 +46,8 @@ left: 850px;
       position: fixed;
       z-index: 10;
       display: flex;
-  
+  width: 500px;
+
 
 
   }

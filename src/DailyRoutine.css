@@ -1,81 +1,52 @@
 
 
 .daily-container{
-
   padding: 10px;
   margin: 0;
-
   padding: 0;
+  height: 100vh;
+}
+
+.form-modal {
+        background-color: rgba(199, 49, 171, 0.369); 
+        padding: 20px 10px;
+        margin-bottom: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+.dailyImg {
+
+    display: flex;
+    width: 80%;
+    position: relative;
+    left: 39px;
+}
+
+
+.card-co {
+list-style: none;
+        position: relative;
+ width: 70%;
+        margin-top: 40px;
+
+        height: 270px;
+        color: rgb(248, 248, 248);
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+        background-color: rgba(74, 3, 227, 0.875);
+        grid-template-rows: 1fr;
+        padding: 20px;
+        font-size: 1rem;
+      padding: 20px 40px;
+      font-family: "poppins";
+      line-height: 1.5;
   
+      left: 15px;
+      text-align: center;
 
 }
 
-.form-modal{
-/* width: 395px; */
-background-color: rgba(199, 49, 171, 0.369);
-  /* background-color: rgba(102, 76, 248, 0.93); */
-/* border-radius: 20px; */
-    /* position: relative;
-      left: 35px; */
-  
-    padding: 20px 10px;
-    margin-bottom: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-
-}
-
-.dailyImg{
-display: flex;
-width: 80%;
-position: relative;
-left: 39px;
-
-  
-}
-
-
-.card-co{
-  position: relative;
-  
-  left: 35px;
-margin-top: 40px;
-width: 80%;
-  height: 300px;
-  color: rgb(175, 9, 175);
-border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-display: grid;
-  background-color: rgb(254, 253, 255);
-grid-template-rows: 1fr 1fr;
-/* padding: 50px; */
-
-}
-.col-1{
-  font-family: "permanent marker";
-  background-color: rgba(67, 3, 204, 0.858);
-  color: rgb(242, 242, 242);
-  border-radius:  10px 10px 0px 0px;
-  font-size: 1.5rem;
-  text-align: center;
-  display: flex;
-padding: 20px;
-justify-content: space-between;
-
-}
-
-.col-list{
-font-size: .9rem;
-margin: 0;
-height: 400px;
-display:flex;
-flex-direction: column;
-flex-wrap: wrap;
-padding: 10px;
-font-family: "poppins";
-
-
-}
 
 
 
@@ -110,18 +81,23 @@ color: white;
   }
 
   .today-btn{
-  text-transform: uppercase;
-    color: rgb(252, 252, 252);
+
+  color: whitesmoke;
     background-color: transparent;
     border: none;
-    text-decoration: underline;
-    margin-bottom: 15px;
     font-family: "permanent marker";
+ border-bottom: 10px solid rgb(255, 255, 255);
+ 
     font-size: 2rem;
     position: relative;
-left: 120px;
+    left: 120px;
 
 
+  }
+
+  .today-btn:hover{
+
+  color: rgba(74, 3, 227, 0.875);
   }
 .dsk-img {
 
@@ -130,28 +106,38 @@ left: 120px;
 }
 
 
-.quote {
-
-  line-height: 1;
-
+#color{
+line-height: 1;
   font-size: 3.5rem;
   font-family: "Permanent Marker";
-  background-color: rgb(210, 43, 149);
   color: white;
-  
-  /* color: rgb(226, 43, 208); */
-
-
-padding: 100px;
-margin-bottom: 40px;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+width: 70%;
+  text-align: center;
+  padding: 40px;
+  /* background-color: rgb(86, 72, 254); */
+    background-color: #FF8C1E;
 }
 
-.dsk-grid{
+.quote {
+
+    background-color: rgb(210, 43, 149);
+    line-height: 1;
+      font-size: 3.5rem;
+      font-family: "Permanent Marker";
+    color: white;
+    padding: 90px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.dsk-grid {
 
  position: relative;
-bottom:150px;
-background-color: rgb(137, 16, 250);
+ bottom:150px;
+ background-color: rgb(137, 16, 250);
+
 }
   
 /* -------- Media queries */
@@ -169,8 +155,6 @@ background-color: rgb(234, 234, 234)
 .dsk-img{
 width: 550px;
   display: none;
-
-
   margin-top: 70px;
   display: block;
 
@@ -183,7 +167,7 @@ background-color: rgb(251, 251, 251);
   display: flex;
   flex-direction: column;
 position: relative;
-left:30%;
+left:20%;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
 }
@@ -191,30 +175,32 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8p
 .dsk-grid{
   background-color: transparent;
   margin-top: 29%;
-padding: 30px 70px 50px 10px;
+padding: 30px 40px 50px 10px;
 display: grid;
 gap: 20px;
   grid-template-columns: 1fr;
+  background-color: rgb(253, 253, 253);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 
 
 .quote{
-width: 590px;
-  line-height: 1;
-height: 300px;
-    font-size: 4rem;
-    font-family: "Permanent Marker";
-    background-color: rgb(210, 43, 149);
-    color: white;
-position: relative;
-right: 10px;
-    /* color: rgb(226, 43, 208); */
-    padding: 5px;
-    margin-bottom: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-padding-top: 150px;
-text-align: center;
+       width: 590px;
+       line-height: 1;
+        height: 300px;
+        font-size: 4rem;
+        font-family: "Permanent Marker";
+        background-color: rgb(210, 43, 149);
+        color: white;
+        position: relative;
+        right: 10px;
+        /* color: rgb(226, 43, 208); */
+        padding: 5px;
+        margin-bottom: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        padding-top: 150px;
+         text-align: center;
 
  
 }
@@ -225,23 +211,25 @@ text-align: center;
       color: rgb(250, 250, 250);
       background-color: transparent;
       border: none;
-text-decoration: underline;
+     border-bottom: 0px solid rgb(255, 255, 255);
       margin-bottom: 15px;
       font-family: "permanent marker";
       font-size: 4rem;
- letter-spacing: 6px;
+      letter-spacing: 6px;
 
   
     }
 
-    .today-btn:hover{
-      color: coral;
-
-    }
 
     .form-modal{
 background-color: rgba(136, 9, 255, 0.995);
       position: relative;
    right:10px;
     }
+
+    .card-co{
+
+      left: 35px;
+    }
+      
 }

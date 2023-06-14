@@ -30,10 +30,16 @@ let [deletBtn, setDeleteBtn] = useState(false);
 let [userInput, setUserInput] = useState('');
 let [showWorkout, setShowWorkout] = useState([])
 let [displayRoutine, setDisplayRoutine] = useState([])
+
+
 let number = ""
 const weekly = new Date()
 const wkDay = weekly.getDay()
+
+
+
 useEffect(()=> {
+
 onValue(routinesInDB, function(snapshot) {
  if (snapshot.exists()){
   {
@@ -46,7 +52,7 @@ return index % 2===1}
 ).reverse()
 
 setDisplayRoutine(postRoutines)
-deleteCard(routineID)
+deleteCard(routines)
  }
 
  } }) },[
@@ -58,7 +64,9 @@ function logWorkout (e){
   setShowWorkout(prevShowWorkout => [ ...prevShowWorkout,(userInput)])
 push(routinesInDB, userInput)
 console.log(showWorkout)
+
 }
+
 
 function getUserInput(e){
   setUserInput(e.target.value)
@@ -71,9 +79,13 @@ function clickedBtn(){
 
 async function deleteCard(routineCard){
 
-// let idNumber = routineCard[0]
-// let dbRoutine = ref(database, `Daily Routine/${idNumber}`)
-// await remove(dbRoutine)
+let idNumber = routineCard[0]
+setDisplayRoutine(prevDisplayRoutine => prevDisplayRoutine.filter( items => items != routineCard))
+
+
+let dbRoutine = ref(database, `Daily Routine/${idNumber}`)
+await remove(dbRoutine)
+
 
 console.log(routineCard)
 }
@@ -107,55 +119,39 @@ return (
  
 </form>
 
- : null}<button onClick={clickedBtn} className="today-btn">today</button>
+ : null}<button onClick={clickedBtn} className="today-btn">#today</button>
    </div>
-
-
 
 {displayRoutine.map(( exercise, index)=> {
  let exercises = exercise.split(" -")
   return(
 <div key={index} className='card-co'>
-
 <div className='col-1'>
   <div>{wkDay}</div>
-
-
-<div>
-
-
-<i className="fa-solid fa-circle-minus"  onClick={()=>deleteCard()}></i> 
-
+  <div>
+<i className="fa-solid fa-circle-minus"  
+onClick={()=>deleteCard(exercises)}></i> 
 </div>
-
-  </div>
-
     {exercises.map((moves, index)=>{
       return(
-
-  <li className='col-list' key={index}>{moves}</li>
-
-
-      )
+       <li className='col-list' key={index}>
+        {moves}
+        </li>
+        )
     })}
    
+
+
+  </div>
 
 </div>
   )
 })}
 
 
- <div className='card-co' > 
-  <div className='date'></div>
- <div className='list-' >
-<ul >
-
-  <li>
-    jump rope
-  </li>
-  <li>planks</li>
-  <li>push up</li>
-</ul>
+ <div className='card-co' id="color" > 
+<div>
+The will must be stronger than the skill.
 </div>
 
 </div>

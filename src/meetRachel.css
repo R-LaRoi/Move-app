@@ -23,7 +23,7 @@ font-family: "permanent marker";
   margin: 20px;
 }
 
-p{color: whitesmoke;
+.meet-text{color: whitesmoke;
 padding: 220px 30px 40px 30px;
   background-color: rgb(193, 5, 255);
   font-size: 1rem;
@@ -39,6 +39,14 @@ padding: 220px 30px 40px 30px;
   background-color: blueviolet;
 }
 
+
+.spotify{
+  margin-top: 50px;
+position: relative;
+width: 380px;
+left: 20px;
+
+}
 @media (min-width:700px) {
 
 
@@ -76,4 +84,12 @@ text-align: center;
    left: 130px;
           z-index: 1;
         }
+
+                .spotify {
+                  margin-top: 180px;
+                  position: relative;
+                  width: 380px;
+                  left: 100px;
+        
+                }
 }

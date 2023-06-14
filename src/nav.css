@@ -4,8 +4,8 @@
   padding: 0;
 position: fixed;
 z-index: 10;
-display: flex;
 width: 500px;
+
 
 
 
@@ -17,11 +17,7 @@ padding: 0;
 font-size: 1.4rem;
 color: #ff8c1e;
 text-decoration: none;
-display: flex;
 list-style: none;
-
-
-
 
 }
 
@@ -31,8 +27,8 @@ i:hover{
 }
 
 .fa-note-sticky{
-position: absolute;
-left: 550px;
+position: relative;
+
   color: rgb(226, 43, 189);
 }
 
@@ -46,6 +42,7 @@ left: 550px;
       position: fixed;
       z-index: 10;
       display: flex;
+
   width: 500px;
 
 
@@ -53,7 +50,7 @@ left: 550px;
   }
   .fa-note-sticky {
       position: absolute;
-      left: 80px;
+      left: 390px;
       color: rgb(255, 40, 219);
     }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import pic from "./assets/pic2.png"
 import Navbar from './Navbar'
 import "./meetRachel.css"
-
+import Footer from './Footer'
 
 export default function MeetRachel() {
 return (
@@ -34,7 +34,7 @@ always on. high energy unmatched. <br></br>
 
 </div> 
 
-            
+            <Footer />
 </section>
 
 )}

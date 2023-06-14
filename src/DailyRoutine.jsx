@@ -1,12 +1,10 @@
 import React, {useEffect, useState} from 'react'
-
 import dailyImage from './assets/dailyImage.png'
-
 import imageGrid from "./assets/imagegrid.png"
-
 import Navbar from './Navbar'
-
 import "./DailyRoutine.css"
+import Footer from './Footer'
+
 
 // ------------------- FIREBASE ----------------
 
@@ -22,20 +20,16 @@ const database = getDatabase(app)
 const routinesInDB = ref(database, "Daily Routine")
 
 // ------------------- FIREBASE ----------------
-let day = new Date()
+
 
 export default function DailyRoutine() {
 let [showForm, setShowForm] = useState(false);
-let [deletBtn, setDeleteBtn] = useState(false);
 let [userInput, setUserInput] = useState('');
 let [showWorkout, setShowWorkout] = useState([])
 let [displayRoutine, setDisplayRoutine] = useState([])
 
-
-let number = ""
 const weekly = new Date()
 const wkDay = weekly.getDay()
-
 
 
 useEffect(()=> {
@@ -44,9 +38,7 @@ onValue(routinesInDB, function(snapshot) {
  if (snapshot.exists()){
   {
 let routines = Object.entries(snapshot.val())
-let routineID = routines[0]
-let routinesArray = routines.flat()
-number = routineID
+ let routinesArray = routines.flat()
 let postRoutines = routinesArray.filter((item, index) => {
 return index % 2===1}
 ).reverse()
@@ -60,10 +52,17 @@ deleteCard(routines)
 
 
 function logWorkout (e){
+
+if (userInput === "" || null){
+  alert("What's the move?")
+} else {
   e.preventDefault();
   setShowWorkout(prevShowWorkout => [ ...prevShowWorkout,(userInput)])
 push(routinesInDB, userInput)
 console.log(showWorkout)
+}
+
+
 
 }
 
@@ -82,16 +81,10 @@ async function deleteCard(routineCard){
 let idNumber = routineCard[0]
 setDisplayRoutine(prevDisplayRoutine => prevDisplayRoutine.filter( items => items != routineCard))
 
-
-let dbRoutine = ref(database, `Daily Routine/${idNumber}`)
-await remove(dbRoutine)
-
-
-console.log(routineCard)
+// let dbRoutine = ref(database, `Daily Routine/${idNumber[0]}`)
+// await remove(dbRoutine)
+// console.log(routineCard)
 }
-
-
-
 
 
 return (
@@ -156,8 +149,9 @@ The will must be stronger than the skill.
 
 </div>
 
-
 </div>
+
+<Footer />
 </section>
 
 )}

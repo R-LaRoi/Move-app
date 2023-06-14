@@ -10,17 +10,14 @@ export default function Navbar() {
     <nav className="nav-container">
       <ul className="icons">
         <li>
-<NavLink to="/"><i className="fa-solid fa-paper-plane"></i></NavLink>
+<NavLink to="/"><i className="fa-solid fa-paper-plane"></i></NavLink> <NavLink to="/meetrachel"><i className="fa-solid fa-user"></i></NavLink>
         </li>
         <li>
    
   <NavLink to="/dailyroutine"><i className="fa-solid fa-note-sticky"></i>
   </NavLink>
     </li>
-  <li>
-    <NavLink to="/meetrachel"><i className="fa-solid fa-user"></i></NavLink>
 
-        </li>
 
   
       </ul>

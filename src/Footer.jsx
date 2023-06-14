@@ -1,21 +1,23 @@
 import React from 'react'
-
+import "./footer.css"
 
 export default function Footer(){
 
   return(
 
 
-    <section>
+    <footer className='f-container'>
 
       <ul>
-        <li>spotify</li>
-        <li>art</li>
-        <li>linkedIn</li>
-
+    
+        <li><i className="fa-solid fa-link"></i></li>
+        <li><i className="fa-brands fa-linkedin"></i></li>
+        <li><i className="fa-brands fa-github"></i></li>
+   <li><i className="fa-brands fa-spotify"></i></li>
+    <div className='ft'>Disclaimer 2023</div>
       </ul>
 
-    </section>
+    </footer>
   )
 
 

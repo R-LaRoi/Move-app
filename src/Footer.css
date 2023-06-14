@@ -1,0 +1,27 @@
+footer{
+color: rgb(255, 142, 21);
+      background-color: rgb(104, 3, 197);
+
+}
+
+.f-container{
+  height: 100px;
+ gap: 10px;
+ display: flex;
+
+}
+
+ul{padding: 30px;
+display: flex;
+  list-style: none;
+gap: 10px;
+
+
+}
+
+.ft{
+  font-size: .8rem;
+  text-transform: uppercase;
+position: relative;
+left:160px
+}

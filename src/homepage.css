@@ -10,15 +10,17 @@ display: flex;
 
 .home-btn {
 width: 140px;
-  padding: 3px;
-  color:rgb(245, 243, 238);
+  padding: 10px;
+  color:rgb(238, 238, 238);
  border: none;
- border-radius: 10px;
+ border-radius: 50px;
  background-color: transparent;
-border: 1.5px solid rgb(250, 185, 20);
- margin-top: 15px;
+border: 1px solid rgb(255, 255, 255);
+ margin-top: 40px;
 text-transform: uppercase;
-font-family: "poppins";
+font-family: inherit;
+letter-spacing: 2px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
 }
 
@@ -29,25 +31,24 @@ gap: 10px;
 }
 
 .home-btn:hover {
-  background-color: #e3aa00;
-  color: rgb(36, 36, 37);
+  background-color: #ececec;
+  color: rgb(227, 0, 170);
 
 }
 
 .header{
 
 line-height: .7;
-font-size: 3.5rem;
-color: rgb(250, 185, 20);
+font-size: 5rem;
+color: rgb(243, 243, 243);
 position: absolute;
 width: 300px;
-top: 300px;
+top: 250px;
 left: 50px;
-text-shadow: .5px .5px 0px rgba(23, 23, 23, 0.468);
-
+text-shadow: .5px .5px 0px rgba(255, 255, 255, 0.468);
+letter-spacing: -5px;
 font-family: 'Permanent Marker', cursive;
-  /* font-family: 'Poppins', sans-serif; */
-
+text-align: center;
 }
 
 .move-video{

@@ -96,10 +96,7 @@ return (
   </div>
   
   </div>
-{/* <img src={dailyImage} className="dailyImg" alt="woman excercising outdoors"
- />  
- <img src={imageGrid} className="dsk-img" alt="woman excercising outdoors"
- />   */}
+
 
 
  <div className='dsk-grid'>

@@ -4,6 +4,7 @@ import imageGrid from "./assets/imagegrid.png"
 import Navbar from './Navbar'
 import "./DailyRoutine.css"
 import Footer from './Footer'
+import GetDay from './Date'
 
 
 // ------------------- FIREBASE ----------------
@@ -28,8 +29,7 @@ let [userInput, setUserInput] = useState('');
 let [showWorkout, setShowWorkout] = useState([])
 let [displayRoutine, setDisplayRoutine] = useState([])
 
-const weekly = new Date()
-const wkDay = weekly.getDay()
+
 
 
 useEffect(()=> {
@@ -47,7 +47,7 @@ setDisplayRoutine(postRoutines)
 deleteCard(routines)
  }
 
- } }) },[
+ } }) },[0
 ])
 
 
@@ -91,15 +91,25 @@ return (
 
 <section className='daily-container'>
 <Navbar />
-
-<img src={dailyImage} className="dailyImg" alt="woman excercising outdoors"
+<div className='quote' id='change-multi-color'>
+  <div>celebrate your small wins!
+  </div>
+  
+  </div>
+{/* <img src={dailyImage} className="dailyImg" alt="woman excercising outdoors"
  />  
  <img src={imageGrid} className="dsk-img" alt="woman excercising outdoors"
- />  
+ />   */}
 
 
  <div className='dsk-grid'>
-<div className='quote'>celebrate your small wins!</div>
+  <div className='pic'>
+  <img src={dailyImage} className="dailyImg" alt="woman excercising outdoors"
+ />  
+   <img src={imageGrid} className="dsk-img" alt="woman excercising outdoors"
+ /> 
+</div>
+{/* <div className='quote' id='change-multi-color'>celebrate your small wins!</div> */}
  <div className='form-modal '>
 
 
@@ -112,7 +122,7 @@ return (
  
 </form>
 
- : null}<button onClick={clickedBtn} className="today-btn">#today</button>
+ : null}<button onClick={clickedBtn} className="today-btn"><GetDay /></button>
    </div>
 
 {displayRoutine.map(( exercise, index)=> {
@@ -120,7 +130,7 @@ return (
   return(
 <div key={index} className='card-co'>
 <div className='col-1'>
-  <div>{wkDay}</div>
+
   <div>
 <i className="fa-solid fa-circle-minus"  
 onClick={()=>deleteCard(exercises)}></i> 

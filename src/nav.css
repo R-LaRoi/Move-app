@@ -18,7 +18,7 @@ font-size: 1.4rem;
 color: #ff8c1e;
 text-decoration: none;
 list-style: none;
-
+ 
 }
 
 i:hover{
@@ -27,9 +27,9 @@ i:hover{
 }
 
 .fa-note-sticky{
-position: relative;
-
-  color: rgb(226, 43, 189);
+position: absolute;
+left: 75%;
+  color: rgb(74, 47, 250);
 }
 
 @media (max-width:500px){
@@ -48,9 +48,6 @@ position: relative;
 
 
   }
-  .fa-note-sticky {
-      position: absolute;
-      left: 390px;
-      color: rgb(255, 40, 219);
-    }
+
+
 }

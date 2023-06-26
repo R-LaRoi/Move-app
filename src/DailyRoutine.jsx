@@ -123,12 +123,15 @@ return (
    </div>
 
 {displayRoutine.map(( exercise, index)=> {
- let exercises = exercise.split(" -")
+
+ let exercises = exercise.split('-');
+//  console.log(exercises)
   return(
 <div key={index} className='card-co'>
+
 <div className='col-1'>
 
-  <div>
+  <div className='minus-btn'>
 <i className="fa-solid fa-circle-minus"  
 onClick={()=>deleteCard(exercises)}></i> 
 </div>

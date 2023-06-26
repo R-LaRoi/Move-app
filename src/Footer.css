@@ -1,6 +1,6 @@
 footer{
 color: rgb(255, 142, 21);
-      background-color: rgb(104, 3, 197);
+      /* background-color: rgb(103, 3, 197); */
 
 }
 
@@ -23,5 +23,5 @@ gap: 10px;
   font-size: .8rem;
   text-transform: uppercase;
 position: relative;
-left:160px
+left:100px
 }

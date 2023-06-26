@@ -1,43 +1,9 @@
 body{
-
-  margin: 0;
+  margin: 10px;
+  background-color: rgb(36, 36, 37);
 }
 
 .hero-container{
 
   margin: 0;
 }
-
-#video {
-  display: flex;
-height: 100vh;
-
-
-}
-
-.header--vid {
-  font-size: 120px;
-  color: #f1e9f0d6;
-  font-weight: 800;
-  line-height: 70%;
-  letter-spacing: 4px;
-  font-family: "permanent marker";
-}
-
-@media (max-width: 600px) {
-  .header--vid {
-    display: flex;
-flex-direction: column;
-    font-size: 45px;
-    line-height: 40px;
-    position:absolute;
-top:400px;
-gap:10px;
-
-
-  }
-
-#video{
-
-  height: 100vh;
-}}

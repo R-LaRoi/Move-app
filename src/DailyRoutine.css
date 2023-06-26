@@ -27,7 +27,7 @@ overflow-x: hidden;
 
 .pic{
 
-  height: 450px;
+  height: 550px;
   background-color: white;
 
 }
@@ -162,14 +162,7 @@ text-align: center;
 
 }
 
-.dsk-grid {
 
- /* position: relative;
-
- background-color: rgb(137, 16, 250);
- /* padding-bottom: 50px; */
-   /* margin-top: 0px; */ 
-}
   
 /* -------- Media queries */
 

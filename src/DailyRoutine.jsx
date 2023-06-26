@@ -91,13 +91,6 @@ return (
 
 <section className='daily-container'>
 <Navbar />
-<div className='quote' id='change-multi-color'>
-  <div>celebrate your small wins!
-  </div>
-  
-  </div>
-
-
 
  <div className='dsk-grid'>
   <div className='pic'>
@@ -106,6 +99,11 @@ return (
    <img src={imageGrid} className="dsk-img" alt="woman excercising outdoors"
  /> 
 </div>
+<div className='quote' id='change-multi-color'>
+  <div>celebrate your small wins!
+  </div>
+  
+  </div>
 {/* <div className='quote' id='change-multi-color'>celebrate your small wins!</div> */}
  <div className='form-modal '>
 

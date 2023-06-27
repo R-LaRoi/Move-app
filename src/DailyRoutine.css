@@ -16,6 +16,11 @@ overflow-x: hidden;
 
     }
 
+    .form-modal:hover{
+border-bottom: 30px solid rgb(116, 84, 255)
+
+    }
+
 .dailyImg {
 
     display: flex;
@@ -44,12 +49,12 @@ list-style: none;
 
         background-color: rgba(74, 3, 227, 0.875);
         grid-template-rows: 1fr;
-        font-size: 1rem;
+        font-size: .9rem;
       padding: 40px 40px;
       font-family: "poppins";
       line-height: 1.6;
       left: 15px;
-      font-weight: 200;
+      font-weight: 400;
 
 
 
@@ -104,6 +109,7 @@ padding: 30px;
   .today-btn:hover{
 border-bottom: 10px solid rgb(255, 153, 0);
   color: rgb(255, 153, 0);
+
   }
 .dsk-img {
 
@@ -176,4 +182,5 @@ margin-left: 30%;
 box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   
     }
+
 }

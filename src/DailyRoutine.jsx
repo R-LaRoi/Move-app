@@ -99,13 +99,16 @@ return (
    <img src={imageGrid} className="dsk-img" alt="woman excercising outdoors"
  /> 
 </div>
-<div className='quote' id='change-multi-color'>
+
+<div className='quote' id='change-multi-color' onClick={clickedBtn}>
   <div>celebrate your small wins!
   </div>
-  
+ 
   </div>
 {/* <div className='quote' id='change-multi-color'>celebrate your small wins!</div> */}
+  <button onClick={clickedBtn} className="today-btn" ><GetDay /></button>
  <div className='form-modal '>
+  
 
 
 {showForm ? 
@@ -117,7 +120,8 @@ return (
  
 </form>
 
- : null}<button onClick={clickedBtn} className="today-btn"><GetDay /></button>
+ : null}
+
    </div>
 
 {displayRoutine.map(( exercise, index)=> {
@@ -149,16 +153,17 @@ onClick={()=>deleteCard(exercises)}></i>
   )
 })}
 
+</div>
 
- <div className='card-co' id="color" > 
+
+
+
+ <div className='quote end' > 
 <div>
 The will must be stronger than the skill.
 </div>
 
 </div>
-
-</div>
-
 <Footer />
 </section>
 

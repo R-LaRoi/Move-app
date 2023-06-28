@@ -4,15 +4,17 @@
   margin: 0;
   padding: 0;
 overflow-x: hidden;
+background-color: rgb(85, 21, 223);
  
 }
 
 .form-modal {
-        background-color: rgba(74, 3, 227, 0.875);
-        padding: 20px 10px;
-        margin-bottom: 10px;
+        background-color: rgb(85, 21, 223);
+      border-radius: 20px;
+        margin: 10px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         z-index:10;
+
 
     }
 
@@ -28,6 +30,9 @@ border-bottom: 30px solid rgb(116, 84, 255)
     position: relative;
     left: 39px;
   z-index: 1;
+  border-radius: 20px;
+
+ 
 }
 
 .pic{
@@ -39,22 +44,23 @@ border-bottom: 30px solid rgb(116, 84, 255)
 .card-co {
 list-style: none;
         position: relative;
- width: 70%;
-        margin-top: 50px;
 
-        height: 350px;
-        color: rgb(248, 248, 248);
-        border-radius: 10px;
+     margin: 35px;
+        height: 300px;
+        color: rgb(76, 63, 127);
+        border-radius: 20px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-        background-color: rgba(74, 3, 227, 0.875);
+        background-color: rgba(251, 251, 251, 0.959);
+        
+        
         grid-template-rows: 1fr;
         font-size: .9rem;
-      padding: 40px 40px;
+      padding: 30px 50px;
       font-family: "poppins";
-      line-height: 1.6;
-      left: 15px;
+      line-height: 1.4;
+
       font-weight: 400;
+      border-top: 50px solid rgb(112, 86, 255);
 
 
 
@@ -91,23 +97,27 @@ color: white;
   }
 
   .today-btn{
+background-color:transparent;
+  color: rgba(255, 255, 255, 0.818);
+text-align: center;
+padding-top: 50px;
+;
+  margin: 25px;
+  height: 50px; 
 
-  color: whitesmoke;
-    background-color: transparent;
-    border: none;
     font-family: "permanent marker";
     font-size: 3rem;
     position: relative;
-    left: 20px;
-    letter-spacing: 4px;
-
-
+    letter-spacing: 0px;
+    border: none;
 z-index: 10;
-padding: 30px;
-  }
+
+padding: 10px;
+
+text-shadow: 1px 1px 2px rgb(79, 79, 79);
+}
 
   .today-btn:hover{
-border-bottom: 10px solid rgb(255, 153, 0);
   color: rgb(255, 153, 0);
 
   }
@@ -122,7 +132,9 @@ border-bottom: 10px solid rgb(255, 153, 0);
 color: rgb(116, 84, 255);
   position: relative;
   float: right;
-  top:335px;
+  left: 20px;
+  top:295px;
+
 
 }
 
@@ -139,7 +151,13 @@ color: rgb(116, 84, 255);
       100% {
         background:#FF8C1E;
       }
+
+
     }
+       
+    
+    
+        
 
 #color{
 line-height: 1;
@@ -154,21 +172,30 @@ line-height: 1;
 
 .quote {
 animation: change-background 4s ease infinite;
-background-color: rgb(210, 43, 149);
-line-height: 1;
- font-size: 4.5rem;
+background-color: rgba(210, 43, 149, 0.533);
+line-height: .8;
+ font-size: 3.5rem;
  font-family: "Permanent Marker";
-color: white;
+color: rgba(255, 255, 255, 0.952);
 text-align: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-/* height: 70vh; */
-   padding: 190px 40px 190px 10px ;
-
-
-
+    box-shadow: rgba(50, 50, 93, 0.25) 10px 13px 27px -5px, rgba(0, 0, 0, 0.3) 10px 8px 16px -8px;
+   padding-top: 70px;
+border-radius: 20px;
+margin: 35px;
+height: 250px;
+margin-top: -90px;
 }
 
 
+.quote:hover{
+
+box-shadow: rgb(255, 171, 14) 10px 13px 27px -5px, rgba(0, 0, 0, 0.3) 10px 8px 16px -8px;
+
+}
+.end{
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
   
 /* -------- Media queries */
 

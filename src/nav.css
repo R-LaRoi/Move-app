@@ -1,35 +1,35 @@
 .nav-container{
-  color: white;
-
   padding: 0;
 position: fixed;
 z-index: 10;
-display: flex;
 
-width: 394px;
+
 
 
 }
 
 a, .icons{
 
-display: flex;
-flex-direction: row;
-  margin: 4px;
-padding: 2px;
-font-size: 1.4rem;
-color: rgb(74, 47, 250);
+font-size: 1.3rem;
+color: rgb(255, 255, 255);
 text-decoration: none;
 list-style: none;
+
+
 
  
 }
 
 i:hover{
 
-  color: rgb(218, 32, 184);
+  color: rgb(218, 119, 32);
 }
 
+a{
+
+display: flex;
+justify-content: space-between;
+}
 
 
 

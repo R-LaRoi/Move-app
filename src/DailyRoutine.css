@@ -10,12 +10,14 @@ background-color: rgb(85, 21, 223);
 
 .pic{
   display: flex;
-    max-width: 800px;
+    max-width: 500px;
     height: 100vh;
     background-color: rgb(137, 16, 250);
     overflow: hidden;
 position: relative;
-/* right: 30px; */
+border-left: 20px solid rgb(255, 128, 49) ;
+border-right: 20px solid rgb(220, 21, 223);
+
 }
 
 .form-modal {

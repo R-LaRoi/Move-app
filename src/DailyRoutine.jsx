@@ -93,7 +93,7 @@ return (
 
  <div className='dsk-grid'>
   <div className='pic'>
-    <video autoPlay loop muted id="mobile-vid">
+    <video autoPlay loop muted playsInline id="mobile-vid">
        
         <source src={consistency}  type="video/mp4"/> 
       </video>

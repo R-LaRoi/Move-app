@@ -12,7 +12,7 @@ export default function Homepage() {
   return (
 
       <section className='hero-container'>
-      <video autoPlay loop muted id="mobile-vid">
+      <video autoPlay loop muted playsInline id="mobile-vid">
         {/* <source 
           src="
 https://github.com/R-LaRoi/Move-app/assets/114012059/d13eb87f-9cb6-49ad-a563-732767ae3775"

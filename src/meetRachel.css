@@ -11,8 +11,9 @@ border-radius: 50%;
 }
 
 .meet-container{
-
+border: 15px solid rgb(88, 36, 190);
 background-color: blueviolet;
+
 
 }
 
@@ -39,7 +40,7 @@ padding: 140px 50px 40px 50px;
 }
 
 .sec-two{
-
+ 
   background-color: blueviolet;
 }
 
@@ -49,7 +50,7 @@ padding: 140px 50px 40px 50px;
 position: relative;
 width: 300px;
  padding: 50px;
-
+ 
 }
 
 @media screen and (min-width:600px) {

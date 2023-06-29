@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import dailyImage from './assets/dailyImage.png'
-import imageGrid from "./assets/imagegrid.png"
 import Navbar from './Navbar'
 import "./DailyRoutine.css"
 import Footer from './Footer'
 import GetDay from './Date'
+import consistency from './assets/consistency.mp4'
 
 
 // ------------------- FIREBASE ----------------
@@ -76,11 +75,11 @@ function clickedBtn(){
   return(setShowForm(!showForm))
 }
 
-async function deleteCard(routineCard){
-
+ async function deleteCard(routineCard){
 let idNumber = routineCard[0]
 setDisplayRoutine(prevDisplayRoutine => prevDisplayRoutine.filter( items => items != routineCard))
 
+console.log(displayRoutine)
 // let dbRoutine = ref(database, `Daily Routine/${idNumber[0]}`)
 // await remove(dbRoutine)
 // console.log(routineCard)
@@ -94,23 +93,20 @@ return (
 
  <div className='dsk-grid'>
   <div className='pic'>
-  <img src={dailyImage} className="dailyImg" alt="woman excercising outdoors"
- />  
-   <img src={imageGrid} className="dsk-img" alt="woman excercising outdoors"
- /> 
+    <video autoPlay loop muted id="mobile-vid">
+       
+        <source src={consistency}  type="video/mp4"/> 
+      </video>
 </div>
 
-<div className='quote' id='change-multi-color' onClick={clickedBtn}>
-  <div>celebrate your small wins!
+<div className='quote' id='change-multi-color' onClick={clickedBtn}> celebrate your small wins!
+  <div>  <button onClick={clickedBtn} className="today-btn">
+    <GetDay /></button>
   </div>
  
   </div>
-{/* <div className='quote' id='change-multi-color'>celebrate your small wins!</div> */}
-  <button onClick={clickedBtn} className="today-btn" ><GetDay /></button>
+
  <div className='form-modal '>
-  
-
-
 {showForm ? 
  <form onSubmit={logWorkout}>
   <textarea name="" id="" cols="30" rows="10"
@@ -132,8 +128,7 @@ return (
 <div key={index} className='card-co'>
 
 <div className='col-1'>
-
-  <div className='minus-btn'>
+    <div className='minus-btn'>
 <i className="fa-solid fa-circle-minus"  
 onClick={()=>deleteCard(exercises)}></i> 
 </div>
@@ -144,11 +139,9 @@ onClick={()=>deleteCard(exercises)}></i>
         </li>
         )
     })}
-   
-
 
   </div>
-
+ 
 </div>
   )
 })}

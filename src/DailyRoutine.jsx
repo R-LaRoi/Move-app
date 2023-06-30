@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import "./DailyRoutine.css"
 import Footer from './Footer'
 import GetDay from './Date'
-import consistency from './assets/consistency.mp4'
+import mbvid from './assets/mbvid.mp4'
 
 
 // ------------------- FIREBASE ----------------
@@ -91,11 +91,12 @@ return (
 <section className='daily-container'>
 <Navbar />
 
- <div className='dsk-grid'>
+ <div>
   <div className='pic'>
+    <div className='daily-header'>consistency <div>is</div><span style={{fontSize:"8rem"}}>key.</span></div>
     <video autoPlay loop muted playsInline id="mobile-vid">
        
-        <source src={consistency}  type="video/mp4"/> 
+        <source src={mbvid}  type="video/mp4"/> 
       </video>
 </div>
 

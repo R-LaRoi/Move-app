@@ -12,7 +12,7 @@ display: flex;
   height: 100vh;
 background-color: rgb(137, 16, 250);
 overflow: hidden;
-border: 15px solid rgb(144, 0, 227);;
+
 
 }
 
@@ -48,13 +48,14 @@ gap: 10px;
 
 line-height: .7;
 font-size: 6rem;
-color: rgba(243, 243, 243, 0.872);
+color: rgba(243, 243, 243, 0.958);
 position: absolute;
 left: 35px;
 width: 300px;
 top: 250px;
-
-text-shadow: .5px .5px 0px rgba(255, 255, 255, 0.468);
+text-shadow: .5px 5px 10px rgba(25, 25, 25, 0.468);
+/* 
+text-shadow: .5px .5px 0px rgba(255, 255, 255, 0.468); */
 letter-spacing: -4px;
 font-family: 'Permanent Marker', cursive;
 text-align: center;

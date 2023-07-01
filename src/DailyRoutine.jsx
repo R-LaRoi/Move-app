@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import "./DailyRoutine.css"
 import Footer from './Footer'
 import GetDay from './Date'
-import mbvid from './assets/mbvid.mp4'
+import smallwin from './assets/smallwin.png'
 
 
 // ------------------- FIREBASE ----------------
@@ -93,20 +93,12 @@ return (
 
  <div>
   <div className='pic'>
-    <div className='daily-header'>consistency <div>is</div><span style={{fontSize:"8rem"}}>key.</span></div>
-    <video autoPlay loop muted playsInline id="mobile-vid">
-       
-        <source src={mbvid}  type="video/mp4"/> 
-      </video>
+<img src={smallwin}></img>
+        <div className='daily-header'>celebrate your <div>small</div><span style={{fontSize:"8rem"}}>wins!</span></div>
+         
 </div>
-
-<div className='quote' id='change-multi-color' onClick={clickedBtn}> celebrate your small wins!
-  <div>  <button onClick={clickedBtn} className="today-btn">
+<button onClick={clickedBtn} className="today-btn">
     <GetDay /></button>
-  </div>
- 
-  </div>
-
  <div className='form-modal '>
 {showForm ? 
  <form onSubmit={logWorkout}>

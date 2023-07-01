@@ -1,35 +1,18 @@
 .nav-container{
-  padding: 0;
 position: fixed;
+  /* x */
 z-index: 10;
-
-
-
-
+height: 50px;
+  /* box-shadow: .5px 5px 10px rgba(25, 25, 25, 0.468); */
+ width: 500px;
 }
 
-a, .icons{
-
-font-size: 1.3rem;
-color: rgb(255, 255, 255);
-text-decoration: none;
-list-style: none;
-
-
-
- 
+i{
+color: rgb(255, 129, 25);
+  position: relative;
+bottom: 30px;
 }
 
-i:hover{
-
-  color: rgb(218, 119, 32);
-}
-
-a{
-
-display: flex;
-justify-content: space-between;
-}
 
 
 

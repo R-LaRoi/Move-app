@@ -1,5 +1,5 @@
  body {
-  margin: 0;
+
    background-color: rgb(36, 36, 37);
    padding: 0;
 
@@ -17,30 +17,28 @@ overflow: hidden;
 }
 
 .home-btn {
-width: 140px;
-  padding: 10px;
-  color:rgb(238, 238, 238);
- border: none;
- border-radius: 50px;
- background-color: transparent;
-border: 1px solid rgb(255, 255, 255);
- margin-top: 40px;
-text-transform: uppercase;
-font-family: inherit;
-letter-spacing: 2px;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 70%;
+  color: rgb(85, 54, 224);
+  border:none;
+  border-radius: 35px;
+  background-color: rgba(245, 245, 245, 0.927);
+  margin-bottom: -20px;
+  text-transform: lowercase;
+  font-family:'Poppins', sans-serif;
+  font-size: 1.5rem;
+padding: 8px;
+  letter-spacing: -1px;
+  font-weight: 800px;
+  box-shadow: 5px 10px 10px rgba(25, 25, 25, 0.468);
+
 
 }
 
-.h-btn{
-gap: 10px;
-  display: flex;
-  flex-direction: row;
-}
 
-.home-btn:hover {
-  background-color: #ececec;
-  color: rgb(227, 0, 170);
+.home-btn:hover{
+  background-color: whitesmoke;
+  color: rgb(137, 16, 250);
+
 
 }
 
@@ -50,12 +48,10 @@ line-height: .7;
 font-size: 6rem;
 color: rgba(243, 243, 243, 0.958);
 position: absolute;
-left: 35px;
+left: 30px;
 width: 300px;
 top: 250px;
 text-shadow: .5px 5px 10px rgba(25, 25, 25, 0.468);
-/* 
-text-shadow: .5px .5px 0px rgba(255, 255, 255, 0.468); */
 letter-spacing: -4px;
 font-family: 'Permanent Marker', cursive;
 text-align: center;

@@ -1,18 +1,31 @@
 .nav-container{
 position: fixed;
-  /* x */
 z-index: 10;
 height: 50px;
-  /* box-shadow: .5px 5px 10px rgba(25, 25, 25, 0.468); */
+ 
  width: 500px;
+
 }
 
 i{
-color: rgb(255, 129, 25);
+color: rgb(211, 15, 175);
   position: relative;
 bottom: 30px;
+background-color: rgba(245, 245, 245, 0.805);
+padding: 7px;
+border-radius: 5px;
+box-shadow: .5px 5px 10px rgba(25, 25, 25, 0.468);
 }
 
+.nav-icons{
+
+  display: flex;
+    flex-direction: row;
+
+
+ 
+   
+}
 
 
 

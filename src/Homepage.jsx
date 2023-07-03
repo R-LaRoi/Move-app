@@ -22,10 +22,11 @@ https://github.com/R-LaRoi/Move-app/assets/114012059/d13eb87f-9cb6-49ad-a563-732
       </video>
 
 
-      <div className='header'> <span style={{fontSize:"3rem"}}>what's the <div style={{fontSize:"8rem"}}>move</div></span>
+      <div className='header'> <span style={{fontSize:"3rem"}}>what's the <div style={{fontSize:"8rem" ,}}>move</div></span>
       <div className='h-btn'>
-     <Link to = "/meetrachel"> <button className='home-btn'>meet rachel</button></Link>
-         <Link to = "/dailyroutine">  <button className='home-btn'>let's move</button></Link>
+     <Link to = "/meetrachel"> <button className='home-btn'>rachel</button></Link>
+         <Link to = "/dailyroutine">  <button className='home-btn'> move</button></Link>
+       
          </div></div>
       
 </section>

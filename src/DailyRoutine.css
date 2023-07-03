@@ -16,13 +16,13 @@ overflow-x: hidden;
   color: rgb(243, 243, 243);
   position: absolute;
   width: 300px;
-  top: 270px;
+  top: 200px;
   text-shadow:.5px 5px 10px rgba(25, 25, 25, 0.468);
   letter-spacing: -4px;
   font-family: 'Permanent Marker', cursive;
   text-align: center;
   line-height: .6;
-  padding: 30px;
+  padding: 50px;
 }
 .pic{
   display: flex;
@@ -114,8 +114,8 @@ list-style: none;
     letter-spacing: 3px;
     border: none;
     z-index: 10;
-left:30px;
-
+left:45px;
+border-bottom: 5px solid #ffffff;
  
 
 }
@@ -202,7 +202,8 @@ box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 
 .today-btn:hover{
-border: 5px solid #ff2baa;
-box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-size:3.5rem;
+border-bottom: 5px solid #ff2baa;
+text-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 border-radius: 10px;
 }

@@ -11,20 +11,22 @@ export default function Navbar() {
       <ul className="nav-icons">
 
      <li>
-     <NavLink to="/">
-  <i className="fa-solid fa-paper-plane"></i>
-      </NavLink>
+
+  <NavLink to="/meetrachel">
+        <i className="fa-solid fa-star "></i>
+        </NavLink>
+  
    </li>
 
 
-      <li>
-      <NavLink to="/meetrachel">
-        <i className="fa-solid fa-user"></i>
-        </NavLink>
+      <li>   <NavLink to="/">
+  <i className="fa-solid fa-grip-lines"></i>
+      </NavLink>
+    
               </li>
         <li>
    
-  <NavLink to="/dailyroutine"><i className="fa-solid fa-note-sticky"></i>
+  <NavLink to="/dailyroutine"><i className="fa-solid fa-calendar"></i>
   </NavLink>
     </li>
 

@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
 import "./nav.css"
+import GetDay from "./Date";
 
 
 export default function Navbar() {
@@ -19,15 +20,19 @@ export default function Navbar() {
    </li>
 
 
-      <li>   <NavLink to="/">
-  <i className="fa-solid fa-grip-lines"></i>
-      </NavLink>
+      <li> 
+          <NavLink to="/dailyroutine">
+    <GetDay/>
+  </NavLink>
+       
     
               </li>
+
         <li>
-   
-  <NavLink to="/dailyroutine"><i className="fa-solid fa-calendar"></i>
-  </NavLink>
+      <NavLink to="/">
+  <i className="fa-solid fa-grip-lines"></i>
+      </NavLink>
+
     </li>
 
 

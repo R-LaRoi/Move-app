@@ -17,10 +17,10 @@ overflow: hidden;
 }
 
 .home-btn {
-  width: 85%;
+  width: 100%;
   color: rgb(251, 251, 251);
   border: none;
-border-bottom:4px solid white;
+border-bottom:3px solid white;
   background-color: transparent;
   text-transform: lowercase;
   font-family:inherit;

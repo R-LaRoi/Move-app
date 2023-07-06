@@ -94,11 +94,13 @@ return (
  <div>
   <div className='pic'>
 <img src={smallwin}></img>
-        <div className='daily-header'>celebrate your <div>small</div><span style={{fontSize:"8rem"}}>wins!</span></div>
+        <div className='daily-header'>celebrate your <div>small</div><span style={{fontSize:"8rem"}}>wins!</span> 
+        <button onClick={clickedBtn} className="today-btn">
+  <i className="fa-solid fa-stopwatch-20 fa-beat"></i></button>
+        </div>
          
 </div>
-<button onClick={clickedBtn} className="today-btn">
-    <GetDay /></button>
+
  <div className='form-modal '>
 {showForm ? 
  <form onSubmit={logWorkout}>

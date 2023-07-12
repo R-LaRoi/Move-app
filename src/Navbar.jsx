@@ -30,7 +30,7 @@ export default function Navbar() {
 
         <li>
       <NavLink to="/">
-  <i className="fa-solid fa-grip-lines"></i>
+  <i className="fa-solid fa-house"></i>
       </NavLink>
 
     </li>

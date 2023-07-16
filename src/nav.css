@@ -1,41 +1,35 @@
-.nav-container{
-position: fixed;
-z-index: 10;
-background-color: rgba(195, 18, 198, 0.935);
-width: 100vw;
-overflow-x: hidden;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+.nav-container {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(195, 18, 198, 0.935);
+  width: 100vw;
+  overflow-x: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.nav-icons{
-padding: 15px;
-margin: 0px;
- display: flex;
+.nav-icons {
+  padding: 15px;
+  margin: 0px;
+  display: flex;
   position: relative;
-justify-content: space-between;
-border-radius: 5px; 
-align-items: baseline;
-
+  justify-content: space-between;
+  border-radius: 5px;
+  align-items: baseline;
 }
-
-
 
 .fa-house,
 .fa-star,
-.fa-calendar{
-color: rgb(242, 127, 44);
-
+.fa-calendar {
+  color: rgb(242, 127, 44);
 }
 
-i:hover{
-
- color: rgb(232, 232, 232);
+i:hover {
+  color: rgb(232, 232, 232);
 }
 
-@media screen and (min-width:420px) {
-      .nav-container{
-
-         max-width: 400px;
-      }
-      
+@media screen and (min-width: 420px) {
+  .nav-container {
+    max-width: 400px;
+  }
 }

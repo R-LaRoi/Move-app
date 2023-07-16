@@ -1,6 +1,6 @@
 footer{
 color: rgb(255, 142, 21);
-      /* background-color: rgb(103, 3, 197); */
+
 
 }
 
@@ -25,3 +25,10 @@ gap: 10px;
 position: relative;
 left:100px
 }
+.fa-link,
+.fa-github,
+.fa-linkedin,
+.fa-spotify{
+color: rgb(242, 127, 44);
+}
+

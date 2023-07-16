@@ -18,20 +18,20 @@ overflow: hidden;
 
 .home-btn {
   width: 60%;
-  color: rgb(168, 2, 218);
-  border: none;
-  border-radius: 10px;
-/* border-bottom:3px solid rgb(255, 22, 212); */
-background-color: rgb(236, 236, 236);
-  text-transform: lowercase;
+  color: rgb(245, 245, 245);
+  border: 2px solid white;
+  border-radius: 40px;
 
+background-color: transparent;
+
+font-family: 'Permanent Marker', Courier, monospace;
   font-size: 1.1rem;
 padding: 5px;
   letter-spacing: 0px;
 
 
-/* line-height: 1; */
-  /* text-shadow: .5px 5px 10px rgba(25, 25, 25, 0.468); */
+
+  text-shadow: .5px 5px 10px rgba(25, 25, 25, 0.468);
 }
 
 
@@ -46,15 +46,16 @@ color: whitesmoke;
 
 line-height: .7;
 font-size: 6rem;
-color: rgba(243, 243, 243, 0.958);
+color: rgb(243, 243, 243);
 position: absolute;
-left: 30px;
-width: 300px;
+left: 25px;
+width: 330px;
 top: 250px;
 text-shadow: .5px 5px 10px rgba(25, 25, 25, 0.468);
-letter-spacing: -4px;
-font-family: 'Permanent Marker', cursive;
+letter-spacing: -2px;
+font-family: 'Permanent Marker';
 text-align: center;
+text-transform: uppercase;
 }
 
 
@@ -64,15 +65,17 @@ text-align: center;
   justify-content: center;
   line-height: 10px;
   gap: 0px;
+  padding-left: 20px;
 
 }
 
 .hp-subtext{
   padding-top: 30px;
-font-family: 'Poppins';
+
   font-size: 1.3rem;
   letter-spacing: -1px;
   font-weight: 400;
+  font-family: 'Permanent Marker', cursive;
 }
 @media screen and (min-width:600px) {
   .hero-container {

@@ -2,7 +2,8 @@
 position: fixed;
 z-index: 10;
 background-color: rgba(195, 18, 198, 0.935);
-width: 400px;
+width: 100vw;
+overflow-x: hidden;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -29,4 +30,12 @@ color: rgb(242, 127, 44);
 i:hover{
 
  color: rgb(232, 232, 232);
+}
+
+@media screen and (min-width:420px) {
+      .nav-container{
+
+         max-width: 400px;
+      }
+      
 }

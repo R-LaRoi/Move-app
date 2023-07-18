@@ -1,207 +1,211 @@
-
-.daily-container{
+.daily-container {
   padding: 10px;
   margin: 0;
   padding: 0;
-overflow-x: hidden;
- background-color: rgb(85, 21, 223);
- 
+  overflow-x: hidden;
+  background-color: rgb(85, 21, 223);
 }
 
-
 .daily-header {
-
-  line-height: .7;
+  line-height: 0.7;
   font-size: 3.8rem;
   color: rgb(233, 230, 230);
   position: absolute;
   width: 300px;
   top: 200px;
-  text-shadow:.5px 5px 10px rgba(25, 25, 25, 0.468);
+  text-shadow: 0.5px 5px 10px rgba(25, 25, 25, 0.468);
   letter-spacing: -4px;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   text-align: center;
-  line-height: .6;
+  line-height: 0.6;
   padding: 50px;
 }
-.pic{
+.pic {
   display: flex;
-    max-width: 500px;
-    height: 100vh;
-    background-color: rgb(137, 16, 250);
-    overflow: hidden;
-position: relative;
+  max-width: 500px;
+  height: 100vh;
+  background-color: rgb(137, 16, 250);
+  overflow: hidden;
+  position: relative;
+}
 
-
+form {
+  position: absolute;
+  bottom: 15%;
+  background-color: #222123fa;
+  border-radius: 20px;
+  margin: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 10;
+  width: 340px;
+  padding-top: 20px;
 }
 
 .form-modal {
-        background-color: #222123;
-      border-radius: 20px;
-        margin: 10px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-        z-index:10;
+  /* background-color: #222123;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 10; */
+}
 
-
-    }
-
-    .form-modal:hover{
-border-bottom: 30px solid rgb(116, 84, 255)
-
-    }
-
-
-
+.form-modal:hover {
+  border-bottom: 30px solid rgb(116, 84, 255);
+}
 
 .card-co {
-list-style: none;
-        position: relative;
-     margin: 35px;
-        height: 330px;
-        color: rgb(224, 224, 224);
-        border-radius: 20px;
-        box-shadow: rgba(96, 65, 65, 0.25) 5px 13px 27px -5px, rgba(0, 0, 0, 0.3) 5px 8px 16px -8px;
-      
-        background-color: #222123;
-        grid-template-rows: 1fr;
-        font-size: .8rem;
-      padding: 25px 10px 25px 20px;
-      font-family: "poppins";
-      line-height: 1.4;
-      font-weight: 400;
-      border-top:3px solid #c115ff;
-    
+  list-style: none;
+  position: relative;
+  margin: 35px;
+  height: 330px;
+  color: rgb(224, 224, 224);
+  border-radius: 20px;
+  box-shadow: rgba(96, 65, 65, 0.25) 5px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 5px 8px 16px -8px;
+  background-color: #222123;
+  grid-template-rows: 1fr;
+  font-size: 0.8rem;
+  padding: 25px 10px 45px 20px;
+  font-family: "poppins";
+  line-height: 1.4;
+  font-weight: 400;
+  border-top: 3px solid #c115ff;
 }
 
+textarea {
+  border: 2px solid rgba(255, 255, 255, 0.393);
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  width: 80%;
+  background-color: transparent;
+  margin: 30px 0px 10px 25px;
+  color: white;
+}
 
+.date {
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.393);
+  color: white;
+  width: 40%;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  left: 100px;
+  text-align: center;
+}
+.btn {
+  text-transform: uppercase;
+  color: white;
+  width: 30%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.393);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  position: relative;
+  left: 60px;
+  padding-right: 4px;
+  margin-right: 15px;
+}
 
-  textarea{
-    border: 2px solid rgba(255, 255, 255, 0.393);
-    border-radius: 10px;
-    padding: 15px;
-    outline: none;
-    width: 80%;
-    background-color: transparent;
-    margin: 50px 0px 10px 25px;
-    color: white;
-
-  }
-  
-  .btn{
-    text-transform: uppercase;
-    color: white;
-    width: 30%;
-    padding:10px;
-    background-color: transparent;
-    border: 1.5px solid rgba(255, 255, 255, 0.393);
-    border-radius: 5px;
-    margin-bottom: 15px;
-    position: relative;
-    left: 60px;
-    padding-right: 4px;
-
-  }
-
-  .today-btn{
-    background-color:transparent;
+.today-btn {
+  background-color: transparent;
   color: rgb(243, 243, 243);
-    text-shadow: .5px 5px 10px rgba(25, 25, 25, 0.468);
-    font-family: "permanent marker";
-    font-size: 1.5rem;
-    letter-spacing: -1px;
-    border: none;
-    z-index: 10;
-
-
+  text-shadow: 0.5px 5px 10px rgba(25, 25, 25, 0.468);
+  font-family: "permanent marker";
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  border: none;
+  z-index: 10;
 }
 
-a{
-
+a {
   text-decoration: none;
 }
-.fa-stopwatch-20{
-margin-top: 80px;
-
+.fa-stopwatch-20 {
+  margin-top: 320px;
+  font-size: 2.5rem;
 }
 
-.minus-btn{
-color: rgb(116, 84, 255);
-  position: relative; 
-left:250px;
-  top:295px;
+.minus-btn {
+  color: rgb(116, 84, 255);
+  position: relative;
+  left: 265px;
+  top: 335px;
+}
+.show-date {
+  color: rgb(116, 84, 255);
+  position: relative;
+  left: 200px;
+  top: -15px;
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
+@keyframes change-background {
+  0% {
+    background: rgb(210, 43, 149);
+  }
 
-    @keyframes change-background {
-      0% {
-        background:rgb(210, 43, 149);
-      }
-  
-      50% {
-        background:rgb(255, 1, 162);
-      }
-  
-      100% {
-        background:#FF8C1E;
-      }
+  50% {
+    background: rgb(255, 1, 162);
+  }
 
+  100% {
+    background: #ff8c1e;
+  }
+}
 
-    }
-       
-    
-    
-        
-
-#color{
-line-height: 1;
+#color {
+  line-height: 1;
   font-size: 3.5rem;
   font-family: "Permanent Marker";
   color: white;
   text-align: center;
   padding: 40px;
-    background-color: #FF8C1E;
-    margin-bottom: 40px;
+  background-color: #ff8c1e;
+  margin-bottom: 40px;
 }
 
 .quote {
-animation: change-background 4s ease infinite;
-background-color: rgba(210, 43, 149, 0.533);
-line-height: .8;
- font-size: 3rem;
- font-family: "Permanent Marker";
-color: rgba(255, 255, 255, 0.952);
-text-align: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 10px 13px 27px -5px, rgba(0, 0, 0, 0.3) 10px 8px 16px -8px;
-   padding: 50px;
-border-radius: 20px;
-margin: 35px;
-height: 250px;
-/* margin-top: -90px; */
+  animation: change-background 4s ease infinite;
+  background-color: rgba(210, 43, 149, 0.533);
+  line-height: 0.8;
+  font-size: 3rem;
+  font-family: "Permanent Marker";
+  color: rgba(255, 255, 255, 0.952);
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 10px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 10px 8px 16px -8px;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 35px;
+  height: 250px;
+  /* margin-top: -90px; */
 }
 
-
-.end{
+.end {
   margin-top: 30px;
   padding-bottom: 30px;
 }
-  
+
 /* -------- Media queries */
 
-@media screen and (min-width:600px) {
+@media screen and (min-width: 600px) {
   .daily-container {
-      padding: 10px;
-margin-left: 30%;
-      padding: 0;
-      overflow-x: hidden;
-      width: 400px;
-box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  
-    }
-
+    padding: 10px;
+    margin-left: 30%;
+    padding: 0;
+    overflow-x: hidden;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
 }
 
-
-.today-btn:hover{
-color: #FF8C1E;
-
+.today-btn:hover {
+  color: #ff8c1e;
 }

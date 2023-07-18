@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react'
 import Navbar from './Navbar'
 import "./DailyRoutine.css"
 import Footer from './Footer'
-import GetDay from './Date'
 import smallwin from './assets/smallwin.png'
 
 
@@ -27,9 +26,7 @@ let [showForm, setShowForm] = useState(false);
 let [userInput, setUserInput] = useState('');
 let [showWorkout, setShowWorkout] = useState([])
 let [displayRoutine, setDisplayRoutine] = useState([])
-
-
-
+let [selectedDate, setSelectedDate] = useState()
 
 useEffect(()=> {
 
@@ -57,14 +54,19 @@ if (userInput === "" || null){
 } else {
   e.preventDefault();
   setShowWorkout(prevShowWorkout => [ ...prevShowWorkout,(userInput)])
-push(routinesInDB, userInput)
+  setSelectedDate(prevSelectedDate => [ ...prevSelectedDate,(selectedDate)])
+push(routinesInDB, {workout:userInput, date: selectedDate})
+
 console.log(showWorkout)
 }
 
-
-
 }
 
+function getDate(e){
+  setSelectedDate(e.target.value)
+  console.log(selectedDate)
+
+}
 
 function getUserInput(e){
   setUserInput(e.target.value)
@@ -104,6 +106,7 @@ return (
  <div className='form-modal '>
 {showForm ? 
  <form onSubmit={logWorkout}>
+  <input type="date" onChange={getDate} className='date'/>
   <textarea name="" id="" cols="30" rows="10"
   onChange={getUserInput} placeholder="what's the move"></textarea>
   <div> <input type="submit" className="btn" id="" /> 
@@ -115,25 +118,29 @@ return (
 
    </div>
 
-{displayRoutine.map(( exercise, index)=> {
-
- let exercises = exercise.split('-');
-//  console.log(exercises)
+{displayRoutine.map((exercise, index)=> {
+const daily = exercise.workout.toLowerCase().split('-')
   return(
 <div key={index} className='card-co'>
 
 <div className='col-1'>
     <div className='minus-btn'>
 <i className="fa-solid fa-circle-minus"  
-onClick={()=>deleteCard(exercises)}></i> 
+onClick={()=>deleteCard(exercise)}></i> 
+
 </div>
-    {exercises.map((moves, index)=>{
+   <li className='show-date'>{exercise.date}</li>
+    
+    {daily.map((moves, index)=>{
       return(
        <li className='col-list' key={index}>
         {moves}
         </li>
         )
     })}
+
+
+    {/* <li>{exercise.workout}</li> */}
 
   </div>
  
@@ -142,11 +149,7 @@ onClick={()=>deleteCard(exercises)}></i>
 })}
 
 </div>
-
-
-
-
- <div className='quote end' > 
+<div className='quote end' > 
 <div>
 The will must be stronger than the skill.
 </div>

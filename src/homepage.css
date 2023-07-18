@@ -13,13 +13,12 @@ body {
 }
 
 .home-btn {
+  margin-top: 20px;
   width: 60%;
   color: rgb(245, 245, 245);
   border: 1.5px solid white;
   border-radius: 40px;
-
   background-color: transparent;
-
   font-family: "Permanent Marker", Courier, monospace;
   font-size: 1.1rem;
   padding: 5px;

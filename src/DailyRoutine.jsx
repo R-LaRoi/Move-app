@@ -51,7 +51,8 @@ function logWorkout (e){
 
 if (userInput === "" || null){
   alert("What's the move?")
-} else {
+}
+ else {
   e.preventDefault();
   setShowWorkout(prevShowWorkout => [ ...prevShowWorkout,(userInput)])
   setSelectedDate(prevSelectedDate => [ ...prevSelectedDate,(selectedDate)])
@@ -63,6 +64,7 @@ console.log(showWorkout)
 }
 
 function getDate(e){
+
   setSelectedDate(e.target.value)
   console.log(selectedDate)
 
@@ -81,7 +83,8 @@ function clickedBtn(){
 let idNumber = routineCard[0]
 setDisplayRoutine(prevDisplayRoutine => prevDisplayRoutine.filter( items => items != routineCard))
 
-console.log(displayRoutine)
+// console.log(idNumber[0])
+// console.log(displayRoutine)
 // let dbRoutine = ref(database, `Daily Routine/${idNumber[0]}`)
 // await remove(dbRoutine)
 // console.log(routineCard)

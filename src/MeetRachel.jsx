@@ -1,16 +1,17 @@
 import React from 'react'
 import pic from "./assets/pic2.png"
-import Navbar from './Navbar'
+import Cards from './Cards'
 import "./meetRachel.css"
 import Footer from './Footer'
+
+
+
+
 
 export default function MeetRachel() {
 return (
 
 <section className='meet-container'>
-  <Navbar />
-
-
   <div className='sec-two'>
 <img src={pic}  className="meet-pic"alt="woman excercising outdoors"
  />
@@ -27,13 +28,7 @@ always on. high energy unmatched. <br></br>
           
 </div>
 
-   
- <div className='spotify'>
-
-<iframe src="https://open.spotify.com/embed/playlist/02LtXdK3vRDKtKSiQxuTIq?utm_source=generator" width="100%" height="375" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-</div> 
-
+ <Cards />
             <Footer />
 </section>
 

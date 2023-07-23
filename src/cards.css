@@ -1,0 +1,39 @@
+.sec-two {
+  /* margin-top: -40px; */
+  background-color: rgb(232, 26, 251);
+}
+
+.links {
+  height: 110vh;
+  position: relative;
+  font-family: "Permanent marker";
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  /* box-shadow: rgba(123, 123, 123, 0.403) 0px 10px 20px,
+    rgba(96, 96, 96, 0.23) 0px 6px 6px; */
+}
+
+.grid-img {
+  display: flex;
+  width: 100%;
+  position: relative;
+  border-top: 30px solid rgb(232, 26, 251);
+  box-shadow: rgba(123, 123, 123, 0.403) 0px 10px 20px,
+    rgba(96, 96, 96, 0.23) 0px 6px 6px;
+}
+
+.img-text {
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 9;
+  top: 180px;
+  line-height: 0.8;
+  color: rgb(255, 255, 255);
+}
+
+.grid-img:hover {
+  opacity: 0.8;
+  border-top: transparent;
+  box-shadow: rgb(33, 1, 36) 0px 10px 20px, rgba(96, 96, 96, 0.23) 0px 6px 6px;
+}

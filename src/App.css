@@ -1,8 +1,9 @@
-body,html{
-margin: 0px;
+body,
+html {
+  margin: 0px;
   background-color: rgb(36, 36, 37);
 }
 
-.hero-container{
+.hero-container {
   margin: 0;
 }

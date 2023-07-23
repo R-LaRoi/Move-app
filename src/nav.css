@@ -1,17 +1,14 @@
 .nav-container {
   position: fixed;
   z-index: 10;
-  background-color: rgba(195, 18, 198, 0.935);
-  width: 100vw;
-  overflow-x: hidden;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 100%;
 }
 
 .nav-icons {
   padding: 15px;
   margin: 0px;
   display: flex;
+
   position: relative;
   justify-content: space-between;
   border-radius: 5px;
@@ -19,9 +16,14 @@
 }
 
 .fa-house,
-.fa-star,
-.fa-calendar {
-  color: rgb(242, 127, 44);
+.fa-link,
+.fa-stopwatch {
+  background-color: blueviolet;
+  margin-left: 5px;
+  color: rgb(239, 239, 239);
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 1rem;
 }
 
 i:hover {

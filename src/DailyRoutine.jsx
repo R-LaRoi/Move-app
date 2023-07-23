@@ -2,13 +2,14 @@ import React, {useEffect, useState} from 'react'
 import Navbar from './Navbar'
 import "./DailyRoutine.css"
 import Footer from './Footer'
-import smallwin from './assets/smallwin.png'
+import vid1 from './assets/vid1.mp4'
 
 
 // ------------------- FIREBASE ----------------
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import GetDay from './Date'
 
 const appSettings = {
     databaseURL: "https://what-s-the-move-f3a77-default-rtdb.europe-west1.firebasedatabase.app/"
@@ -98,11 +99,17 @@ return (
 
  <div>
   <div className='pic'>
-<img src={smallwin}></img>
-        <div className='daily-header'>celebrate your <div>small</div><span style={{fontSize:"8rem"}}>wins!</span> 
-        <button onClick={clickedBtn} className="today-btn">
-  <i className="fa-solid fa-stopwatch-20 fa-beat"></i></button>
+
+      <video autoPlay loop muted playsInline id="mobile-vid">
+        <source src={vid1}  type="video/mp4"/> 
+      </video>
+
+        <div className='daily-header'> 
+        <div><GetDay />
+      consistency is key.
         </div>
+        <button onClick={clickedBtn} className="today-btn">
+  <i className="fa-solid fa-stopwatch-20 fa-beat"></i></button> </div>
          
 </div>
 
@@ -113,7 +120,7 @@ return (
   <textarea name="" id="" cols="30" rows="10"
   onChange={getUserInput} placeholder="what's the move"></textarea>
   <div> <input type="submit" className="btn" id="" /> 
-  <input type="reset"  className="btn"/></div>
+  <input type="reset" className="btn"/></div>
  
 </form>
 

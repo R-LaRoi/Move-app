@@ -1,34 +1,31 @@
-footer{
-color: rgb(255, 142, 21);
-
-
+footer {
+  color: rgb(255, 142, 21);
+  padding: 20px;
+  margin-top: 50px;
 }
 
-.f-container{
+.f-container {
   height: 100px;
- gap: 10px;
- display: flex;
-
+  gap: 10px;
+  display: flex;
 }
 
-ul{padding: 30px;
-display: flex;
+ul {
+  padding: 30px;
+  display: flex;
   list-style: none;
-gap: 10px;
-
-
+  gap: 10px;
 }
 
-.ft{
-  font-size: .8rem;
+.ft {
+  font-size: 0.8rem;
   text-transform: uppercase;
-position: relative;
-left:100px
+  position: relative;
+  left: 100px;
 }
 .fa-link,
 .fa-github,
 .fa-linkedin,
-.fa-spotify{
-color: rgb(242, 127, 44);
+.fa-spotify {
+  color: rgb(242, 127, 44);
 }
-

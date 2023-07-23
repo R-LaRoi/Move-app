@@ -10,30 +10,23 @@ export default function Navbar() {
 
     <nav className="nav-container">
       <ul className="nav-icons">
-
      <li>
-
-  <NavLink to="/meetrachel">
-        <i className="fa-solid fa-star "></i>
+      <NavLink to="/">
+       <i className="fa-solid fa-house"></i>
+      </NavLink>
+     <NavLink to="/contact">
+    <i className="fa-solid fa-link"></i>
         </NavLink>
-  
-   </li>
 
+   </li>
 
       <li> 
           <NavLink to="/dailyroutine">
-    <GetDay/>
+<i className="fa-solid fa-stopwatch"></i>
   </NavLink>
        
-    
               </li>
 
-        <li>
-      <NavLink to="/">
-  <i className="fa-solid fa-house"></i>
-      </NavLink>
-
-    </li>
 
 
   

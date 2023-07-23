@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Homepage from "./Homepage";
-
+import Contact from "./Contact"
 import MeetRachel from "./MeetRachel";
 import DailyRoutine from "./DailyRoutine"
 import "./App.css"
@@ -15,6 +15,7 @@ export default function App() {
           <Route  exact path="meetrachel" element={<MeetRachel/>} />
          <Route  exact path="dailyroutine" element={<DailyRoutine/>} />
         <Route exact ="home" element={<Homepage/>} />
+            <Route exact path ="contact" element={<Contact/>} />
         </Route>
       </Routes>
     </BrowserRouter>

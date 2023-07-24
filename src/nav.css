@@ -34,7 +34,7 @@
   justify-content: space-between;
   list-style-type: none;
   color: rgb(15, 14, 14);
-  gap: 20px;
+  gap: 30px;
 }
 
 .nav-elements ul li:not(:last-child) {

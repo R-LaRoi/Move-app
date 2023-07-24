@@ -29,7 +29,7 @@ export default function Footer(){
     
 
    </li>
-    <div className='ft'>©2023 What's The Move  Reserved</div>
+    <div className='ft'>©2023 What's The Move </div>
       </ul>
 
     </footer>

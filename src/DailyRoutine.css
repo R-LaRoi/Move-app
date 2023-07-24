@@ -21,7 +21,7 @@
 }
 .pic {
   display: flex;
-  width: 100%;
+  width: 105%;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
   position: relative;
@@ -196,7 +196,7 @@ a {
     margin-left: 30%;
     padding: 0;
     overflow-x: hidden;
-    width: 400px;
+    width: 500px;
     box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20px,
       rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }

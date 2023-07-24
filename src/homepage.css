@@ -11,15 +11,12 @@ body {
   flex-direction: row;
   max-width: 460px;
   height: 90vh;
-  background-color: rgb(255, 255, 255);
   overflow: hidden;
   align-items: center;
 }
 
 #mobile-vid {
   max-width: 450px;
-  border-bottom: 30px solid white;
-  box-shadow: 0.5px 5px 60px rgba(3, 3, 3, 0.468);
 }
 
 .header {

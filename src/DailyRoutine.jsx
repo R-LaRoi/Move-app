@@ -93,9 +93,13 @@ setDisplayRoutine(prevDisplayRoutine => prevDisplayRoutine.filter( items => item
 
 
 return (
-
-<section className='daily-container'>
+<>
+<div className='nav-'>
 <Navbar />
+</div>
+<section className='daily-container'>
+
+
 
  <div>
   <div className='pic'>
@@ -105,7 +109,7 @@ return (
       </video>
 
         <div className='daily-header'> 
-        <div><GetDay />
+        <div onClick={clickedBtn}><GetDay />
       consistency is key.
         </div>
         <button onClick={clickedBtn} className="today-btn">
@@ -167,5 +171,5 @@ The will must be stronger than the skill.
 </div>
 <Footer />
 </section>
-
+</>
 )}

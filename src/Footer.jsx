@@ -6,8 +6,7 @@ export default function Footer(){
   return(
 
 
-    <footer className='f-container'>
-
+    <footer className='footer-container'>
       <ul>
     
         <li>
@@ -23,10 +22,14 @@ export default function Footer(){
      <a href= "https://open.spotify.com/playlist/02LtXdK3vRDKtKSiQxuTIq?si=0ce81940fb9d48a8">  <i className="fa-brands fa-spotify" target='_blank'>
    </i> </a>
     
-  
-   
+
    </li>
-    <div className='ft'>Disclaimer 2023</div>
+    <li>
+     <a href= "https://www.acefitness.org/resources/everyone/blog/"> ACE </a>
+    
+
+   </li>
+    <div className='ft'>©2023 What's The Move  Reserved</div>
       </ul>
 
     </footer>

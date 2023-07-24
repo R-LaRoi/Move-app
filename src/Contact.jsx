@@ -8,10 +8,12 @@ import Footer from './Footer'
 
 export default function Contact() {
 return (
+<>
 
-<section className='contact-container'>
+
 <Navbar />
 
+<section className='contact-container'>
 <section className='meet-container'>
   <div className='sec-contact'>
 <img src={img4}  className="meet-pic"alt="woman excercising outdoors"
@@ -21,38 +23,50 @@ return (
     <h1>let's move</h1>
     <p>Let's stay fit-for-life! I am committed to 
 empower through movement and here to encourage others to build on their strengths and maintain good habits. Consistency is key. </p>
+     <div>Personal training sessions available by appointment. <div><i className="fa-solid fa-calendar"></i></div></div>
+      
 Virtual Group Sessions <br></br>
  <div>   6:30AM</div>
             
           Monday / Wednesday / Friday 
-       
-            <p>email for zoom link</p>
+         <p>email for zoom link</p>
             <div><i className="fa-solid fa-square-envelope"></i></div>
+  
+          
             </div>
 
           
 </div>
-</section>
-     <video autoPlay loop muted playsInline id='three-vid' >
+  <video autoPlay loop muted playsInline id='three-vid' >
         <source src={three}  type="video/mp4"  /> 
       </video>
-<div>
-<div className='contact-text'> </div>
-<div className='contact-header'> 
 
- <i className="fa-brands fa-tiktok"></i>
+  <div className='contact-icons'>
+    <a href="#">
+ <i className="fa-brands fa-tiktok"></i></a>
+ <p>Consistency is key! Join us on tiktok and discover fitness tips to boost your workout.</p>
 
+ <a href= "https://open.spotify.com/playlist/02LtXdK3vRDKtKSiQxuTIq?si=0ce81940fb9d48a8"> 
  <i className="fa-brands fa-spotify" id="spotify">
+ </i> </a>
+  <p>Stay motivated to move with our Amapiano Jump Rope Playlist! </p>
 
- </i> 
-<i className="fa-regular fa-comments"></i></div>
+<a href=""><i className="fa-regular fa-comments"></i></a>
+ <p>Let's connect! I am always happy to hear from you. </p>
+</div>
 
+</section>
+   
+<div>
  <div className='spotify'>
 
 {/* <iframe src="https://open.spotify.com/embed/playlist/02LtXdK3vRDKtKSiQxuTIq?utm_source=generator" width="100%" height="375" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
 
 </div>  
 </div>
+  <div>
+      <Footer /></div> 
 </section>
 
+</>
 )}

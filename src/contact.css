@@ -5,7 +5,7 @@
 
 .contact-header {
   font-size: 1.8rem;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   position: absolute;
   left: 100px;
   top: 130%;
@@ -14,7 +14,7 @@
   font-family: "Permanent Marker", cursive;
   text-align: center;
   line-height: 1;
-  padding: 18px;
+  /* padding: 18px; */
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -26,22 +26,30 @@
   border-top: 30px solid rgb(215, 6, 208);
   width: 100%;
 }
-
-.square {
-  margin-top: 30px;
-  box-shadow: 5.5px 5px 10px rgba(25, 25, 25, 0.468);
-  height: 400px;
-  background-color: rgba(146, 9, 244, 0.944);
+.contact-icons {
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  position: absolute;
+  top: 1160px;
+  left: 120px;
+  color: whitesmoke;
+  text-align: center;
+  font-family: "poppins";
+  line-height: 1.1;
+  font-size: 0.9rem;
 }
+
 .fa-tiktok,
 #spotify,
 .fa-comments {
   color: rgba(255, 255, 255, 0.944);
-  font-size: 5rem;
-  background-color: rgba(244, 9, 236, 0.917);
-  padding: 30px;
+  font-size: 3.2rem;
+  background-color: rgba(244, 9, 236, 0.921);
+  padding: 25px;
   border-radius: 20px;
   box-shadow: 5.5px 5px 10px rgba(25, 25, 25, 0.468);
+  text-align: center;
 }
 
 #three-vid {
@@ -57,10 +65,9 @@
   bottom: 550px;
 }
 
-/* 
-.spotify {
-  bottom: 450px;
-  position: relative;
-  width: 300px;
-  padding: 50px;
-} */
+@media screen and (min-width: 501px) {
+  .navbar,
+  .contact-icons {
+    margin-left: 390px;
+  }
+}

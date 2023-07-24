@@ -1,6 +1,7 @@
 .sec-two {
-  /* margin-top: -40px; */
-  background-color: rgb(232, 26, 251);
+  margin-top: -10px;
+  /* border-top: 30px solid white; */
+  background-color: rgb(250, 5, 189);
 }
 
 .links {
@@ -18,7 +19,7 @@
   display: flex;
   width: 100%;
   position: relative;
-  border-top: 30px solid rgb(232, 26, 251);
+  border-bottom: 30px solid rgb(110, 47, 255);
   box-shadow: rgba(123, 123, 123, 0.403) 0px 10px 20px,
     rgba(96, 96, 96, 0.23) 0px 6px 6px;
 }
@@ -34,6 +35,6 @@
 
 .grid-img:hover {
   opacity: 0.8;
-  border-top: transparent;
+  border-bottom: 25px solid rgb(250, 16, 191);
   box-shadow: rgb(33, 1, 36) 0px 10px 20px, rgba(96, 96, 96, 0.23) 0px 6px 6px;
 }

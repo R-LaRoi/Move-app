@@ -1,40 +1,113 @@
-import { NavLink } from "react-router-dom";
-import React from "react";
-import "./nav.css"
-import GetDay from "./Date";
+
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import './nav.css'
 
 
-export default function Navbar() {
+export default function Navbar () {
+  const [showNavbar, setShowNavbar] = useState(false)
 
-  return(
+  function handleShowNavbar () {
+    setShowNavbar(!showNavbar)
+  }
 
-    <nav className="nav-container">
-      <ul className="nav-icons">
-     <li>
-      <NavLink to="/">
-       <i className="fa-solid fa-house"></i>
-      </NavLink>
-     <NavLink to="/contact">
-    <i className="fa-solid fa-link"></i>
-        </NavLink>
+  return (
+    <nav className="navbar">
+      <div className="container">
+  
+        <div className="menu-icon" id="bars" onClick={handleShowNavbar}>
+<i className="fa-solid fa-location-arrow "></i>
+        </div>
+        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+          <ul>
+            <li>
+              <NavLink to="/dailyroutine">Today
+              </NavLink>
+            </li>
+      
+            <li>
+               <NavLink to="/"> <i className="fa-solid fa-star"></i></NavLink>
+             
+            </li>
 
-   </li>
+            <li>
+              <NavLink to="/contact"> 
+              Connect
+              </NavLink>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  )
+}
 
-      <li> 
-          <NavLink to="/dailyroutine">
-<i className="fa-solid fa-stopwatch"></i>
-  </NavLink>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { NavLink } from "react-router-dom";
+// import React from "react";
+// import "./nav.css"
+// import GetDay from "./Date";
+
+
+// export default function Navbar() {
+
+//   return(
+
+//     <nav className="nav-container">
+//       <ul className="nav-icons">
+//      <li>
+//       <NavLink to="/">
+//        <i className="fa-solid fa-house"></i>
+//       </NavLink>
+//      <NavLink to="/contact">
+//     <i className="fa-solid fa-link"></i>
+//         </NavLink>
+
+//    </li>
+
+//       <li> 
+//           <NavLink to="/dailyroutine">
+// <i className="fa-solid fa-stopwatch"></i>
+//   </NavLink>
        
-              </li>
+//               </li>
 
 
 
   
-      </ul>
+//       </ul>
    
 
           
-    </nav>
+//     </nav>
      
-  )
-}
+//   )
+// }

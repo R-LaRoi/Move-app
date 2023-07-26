@@ -14,7 +14,7 @@
   font-family: "Permanent Marker", cursive;
   text-align: center;
   line-height: 1;
-  /* padding: 18px; */
+
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -22,7 +22,6 @@
 
 .contact-img {
   margin-top: 50px;
-  /* padding: 10px; */
   border-top: 30px solid rgb(215, 6, 208);
   width: 100%;
 }

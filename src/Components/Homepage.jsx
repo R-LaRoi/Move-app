@@ -1,13 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import "./homepage.css"
+import "./stylesheets/homepage.css"
 import mbvid from './assets/mbvid.mp4'
 import MeetRachel from './MeetRachel'
 import Navbar from './Navbar'
-
-
-
-import './App.css'
+import './stylesheets/app.css'
 
 
 export default function Homepage() {

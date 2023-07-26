@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import './nav.css'
+import './stylesheets/nav.css'
 
 
 export default function Navbar () {
@@ -16,7 +16,9 @@ export default function Navbar () {
       <div className="container">
   
         <div className="menu-icon" id="bars" onClick={handleShowNavbar}>
-<i className="fa-solid fa-location-arrow "></i>
+<i className="fa-solid fa-location-arrow ">
+  
+</i>
         </div>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul>

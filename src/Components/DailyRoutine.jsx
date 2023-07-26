@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Navbar from './Navbar'
-import "./DailyRoutine.css"
+import './stylesheets/dailyroutine.css'
 import Footer from './Footer'
 import vid1 from './assets/vid1.mp4'
 
@@ -98,16 +98,11 @@ return (
 <Navbar />
 </div>
 <section className='daily-container'>
-
-
-
  <div>
   <div className='pic'>
-
       <video autoPlay loop muted playsInline id="mobile-vid">
         <source src={vid1}  type="video/mp4"/> 
       </video>
-
         <div className='daily-header'> 
         <div onClick={clickedBtn}><GetDay />
       consistency is key.
@@ -154,8 +149,6 @@ onClick={()=>deleteCard(exercise)}></i>
     })}
 
 
-    {/* <li>{exercise.workout}</li> */}
-
   </div>
  
 </div>
@@ -163,7 +156,7 @@ onClick={()=>deleteCard(exercise)}></i>
 })}
 
 </div>
-<div className='quote end' > 
+<div className='quote end'> 
 <div>
 The will must be stronger than the skill.
 </div>

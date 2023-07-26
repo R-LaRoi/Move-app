@@ -1,6 +1,6 @@
 .sec-two {
   margin-top: -10px;
-  /* border-top: 30px solid white; */
+
   background-color: rgb(250, 5, 189);
 }
 
@@ -11,8 +11,6 @@
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  /* box-shadow: rgba(123, 123, 123, 0.403) 0px 10px 20px,
-    rgba(96, 96, 96, 0.23) 0px 6px 6px; */
 }
 
 .grid-img {

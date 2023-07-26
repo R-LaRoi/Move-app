@@ -22,13 +22,14 @@ body {
 .header {
   line-height: 0.7;
   font-size: 6rem;
+
   color: rgb(243, 243, 243);
   position: absolute;
-  left: 25px;
+  left: 28px;
   width: 330px;
   top: 200px;
-  text-shadow: 0.5px 5px 10px rgba(25, 25, 25, 0.468);
-  letter-spacing: -2px;
+  text-shadow: 0.5px 10px 10px rgba(25, 25, 25, 0.468);
+  letter-spacing: -5px;
   font-family: "Permanent Marker";
   text-align: center;
   text-transform: uppercase;

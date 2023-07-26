@@ -3,8 +3,9 @@ import Layout from "./Layout";
 import Homepage from "./Homepage";
 import Contact from "./Contact"
 import MeetRachel from "./MeetRachel";
-import DailyRoutine from "./DailyRoutine"
-import "./App.css"
+import DailyRoutine from "./DailyRoutine";
+import "./stylesheets/app.css"
+
 
 export default function App() {
   return (

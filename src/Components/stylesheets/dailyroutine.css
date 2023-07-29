@@ -10,14 +10,15 @@
   font-size: 1.8rem;
   color: rgb(233, 230, 230);
   position: absolute;
-  left: 10px;
-  top: 250px;
+  left: 60px;
+  top: 320px;
+  text-align: center;
   text-shadow: 0.5px 5px 10px rgba(25, 25, 25, 0.468);
   letter-spacing: -2px;
   font-family: "Permanent Marker", cursive;
-  text-align: center;
   line-height: 1;
-  padding: 18px;
+  margin: 0px;
+  padding: 0px;
 }
 .pic {
   display: flex;
@@ -193,7 +194,7 @@ a {
     margin-left: 30%;
     padding: 0;
     overflow-x: hidden;
-    width: 500px;
+    width: 400px;
     box-shadow: rgba(0, 0, 0, 0.403) 0px 10px 20px,
       rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
